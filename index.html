@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            padding: 30px 40px;
+            border: 1px solid saddlebrown;
+            background-color: green;
+            font-size: 24px;
+            color: black;
+            border-radius: 10px;
+            position: relative;
+            /* transition: 1s ease;
+            transition-duration: 3s;
+            transition-delay: 0.5s;
+            transition-timing-function: ease-in;*/
+
+            animation-name: move;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+
+        }
+
+        button:hover {
+            transform: rotate(0deg)left;
+            background-color: blueviolet;
+        }
+
+
+        div {
+            margin: 40vh;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        /* @keyframes move{
+            from{
+                transform: translate(0px);
+            }
+            to{
+                transform: translate(200px);
+            }*/
+        @keyframes move {
+            0% {
+                transform: rotate(0deg);left: 0px;
+            }
+
+            50% {
+                transform: rotate(360deg);left: 500px;
+            }
+
+            100% {
+
+                transform: rotate(360deg);left: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Hello This is testing</h1>
+        <button>CSS</button>
+    </div>
+</body>
+
+</html>
